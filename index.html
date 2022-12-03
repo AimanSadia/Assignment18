@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /* Q1 */
+        function concat(n, a) {
+            console.log(`name=${n}, age=${a}`)
+        }
+        concat('A', 29)
+
+
+        /* Q2 */
+        function Double(a) {
+            let re = a * 2
+            console.log(re)
+        }
+        Double(3)
+        /* Q3 */
+        const square = (n) => n ** 2
+
+        console.log(square(5))
+
+        /* Q4 */
+        const age = (x) => (x < 18) ? 'baby' : 'adult'
+        console.log(age(7))
+
+        /* Q5 */
+        const arrow = (a) => {
+            console.log(a + a)
+        }
+
+        arrow(2)
+        /* Q6 */
+
+        const cities = {
+            ka: 'karachi',
+            la: 'lahore',
+            pa: 'peshawar'
+        }
+
+        for (var k in cities) {
+            console.log(cities[k])
+        }
+
+
+        /* Q7 */
+        const aa = ['karachi', 'lahore', 'islamabad']
+
+        let counter = 0
+        for (let [index, _] of aa.entries()) {
+
+            console.log(aa[index])
+            counter++
+        }
+        /* Q8 */
+        const area = (a, b) => a * b
+        console.log(area(2, 3))
+    </script>
+</body>
+
+</html>
